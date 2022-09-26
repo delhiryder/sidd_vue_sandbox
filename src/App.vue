@@ -1,14 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MarkerIOWidget/>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import MarkerIOWidget from './components/MarkerIOWidget.vue'
 
 export default {
   name: 'App',
   components: {
+    MarkerIOWidget,
     HelloWorld
   }
 }
