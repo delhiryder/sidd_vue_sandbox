@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App"/>
-  <MarkerIOWidget/>
+  <MarkerIOWidget :outer-destination-id="destination_id" />
 </template>
 
 <script>
@@ -16,6 +16,11 @@ export default {
   components: {
     MarkerIOWidget,
     HelloWorld
+  },
+  data() {
+    return {
+      destination_id: '6331d30396c72b3b4f0613b9'
+    }
   }
 }
 </script>

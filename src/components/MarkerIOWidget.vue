@@ -49,13 +49,11 @@ import markerSDK from '@marker.io/browser';
 export default {
   name: 'MarkerIOWidget',
 
+  props: {outerDestinationId: String},
+
   data() {
     return {
       widget: null,
-
-      // You can find your destination ID in your Marker.io account.
-      // Learn mode: https://github.com/marker-io/browser-sdk/tree/master/examples/vue#getting-your-destination-id
-      destinationId: '6331d30396c72b3b4f0613b9',
 
       reporterInfo: {
         email: null,
@@ -74,7 +72,7 @@ export default {
     async loadMarkerSDK() {
       // Load widget using the Marker.io SDK
       this.widget = await markerSDK.loadWidget({
-        destination: this.destinationId,
+        destination: this.outerDestinationId,
       });
 
       const events = [
