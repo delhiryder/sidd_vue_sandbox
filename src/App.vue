@@ -5,8 +5,11 @@
 </template>
 
 <script>
+import LogRocket from 'logrocket';
 import HelloWorld from './components/HelloWorld.vue'
 import MarkerIOWidget from './components/MarkerIOWidget.vue'
+
+LogRocket.init('vtonhp/sidd_vue_sandbox');
 
 export default {
   name: 'App',
