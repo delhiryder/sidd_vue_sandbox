@@ -70,6 +70,7 @@ export default {
 
   methods: {
     async loadMarkerSDK() {
+      console.log('outerdestinationId='+this.outerDestinationId)
       // Load widget using the Marker.io SDK
       this.widget = await markerSDK.loadWidget({
         destination: this.outerDestinationId,
