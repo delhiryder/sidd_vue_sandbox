@@ -15,7 +15,15 @@ export default {
   name: 'App',
   components: {
     HelloWorld
-  }
+  },
+  // mounted() {
+  //   let userbackWidgetCode = document.createElement('script')
+  //   userbackWidgetCode.setAttribute('src','https://static.userback.io/widget/v1.js')
+  //   let userbackAccessTokenAssignment = document.createElement('script')
+  //   userbackAccessTokenAssignment.value = 'Userback.access_token = 37770|73921|WwixkuxkemJCeqK33XKzmN6lP;'
+  //   document.head.appendChild(userbackWidgetCode)
+  //   document.head.appendChild(userbackAccessTokenAssignment)
+  // }
 }
 </script>
 
